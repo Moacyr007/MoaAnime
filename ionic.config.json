@@ -1,0 +1,7 @@
+{
+  "name": "moaAnime",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
