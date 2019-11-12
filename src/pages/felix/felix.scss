@@ -1,0 +1,23 @@
+page-felix {
+    img.remImg {
+        width: 100%;
+        /* padding: 20%; */
+        display: block;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* width: 50%; */
+        height: 100%;
+    }
+    
+    button {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background: lightblue;
+    }
+    .countImg {
+        padding: 3px;
+        color: rgb(89, 145, 250);
+        font-weight: bolder;
+    }
+}
