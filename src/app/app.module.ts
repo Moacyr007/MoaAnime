@@ -13,9 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { RemPage } from '../pages/rem/rem';
 import { FelixPage } from '../pages/felix/felix';
 import { NozomiPage } from '../pages/nozomi/nozomi';
-import { BarCodePage } from '../pages/bar-code/bar-code';
 
-import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -26,7 +24,6 @@ import { FormsModule } from '@angular/forms';
     RemPage,
     FelixPage,
     NozomiPage,
-    BarCodePage
   ],
   imports: [
     BrowserModule,
@@ -41,12 +38,10 @@ import { FormsModule } from '@angular/forms';
     RemPage,
     FelixPage,
     NozomiPage,
-    BarCodePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
