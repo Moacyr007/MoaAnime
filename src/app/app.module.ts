@@ -16,6 +16,7 @@ import { NozomiPage } from '../pages/nozomi/nozomi';
 
 import { FormsModule } from '@angular/forms';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     StatusBar,
     SplashScreen,
     BarcodeScanner,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

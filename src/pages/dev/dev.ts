@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 //import { BarcodeScanner} from '@ionic-native/barcode-scanner'
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 /**
  * Generated class for the DevPage page.
@@ -17,7 +18,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 })
 export class DevPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner, private geolocation: Geolocation) {
   }
 
   ionViewDidLoad() {
@@ -30,6 +31,14 @@ export class DevPage {
     }).catch(err => {
         console.log('Error', err);
     });
+  }
+  testGeolocation(){
+    this.geolocation.getCurrentPosition().then((resp) => {
+      alert(resp.coords.latitude)
+      //resp.coords.longitude
+     }).catch((error) => {
+       console.log('Error getting location', error);
+     });
   }
 
 }
