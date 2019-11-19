@@ -15,7 +15,7 @@ import { FelixPage } from '../pages/felix/felix';
 import { NozomiPage } from '../pages/nozomi/nozomi';
 
 import { FormsModule } from '@angular/forms';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 @NgModule({
   declarations: [
